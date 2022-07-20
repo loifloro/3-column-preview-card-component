@@ -1,0 +1,86 @@
+@import "./variable";
+
+html {
+    background: $very-light-gray;
+}
+
+body{
+    font-size: 15px;
+}
+
+h1 {
+    font-family: Big Shoulders Display, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $very-light-gray;
+}
+
+p {
+    font-family: Lexend Deca,sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: $white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: .5rem;
+    margin: 4rem 1.5rem;
+
+    .card {
+        padding: 3rem;
+
+        &--sedan {
+            background: $bright-orange;
+        }
+        &--suv {
+            background: $dark-cyan;
+        }
+        &--luxury {
+            background: $very-dark-cyan;
+        }
+
+        &__title {
+            margin-block: 1rem;
+        }
+        &__body {
+            margin-block: 1.5rem;
+        }
+        &__btn{
+            padding: .5rem 1.5rem;
+            border-radius: 2rem;
+            border: none;
+            font-family: Lexend Deca,sans-serif;
+            font-weight: 400;
+            background: $very-light-gray;
+
+            &--sedan {
+                color: $bright-orange;
+            }
+            &--suv {
+                color: $dark-cyan;
+            }
+            &--luxury {
+                color: $very-dark-cyan;
+            }
+            &:hover , &:focus {
+                background: inherit;
+                border: 1px solid $very-light-gray;
+                color: $very-light-gray;
+            }
+        }
+    }
+}
+
+
+
+.attribution {
+    font-family: Lexend Deca,sans-serif;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

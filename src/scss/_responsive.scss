@@ -1,0 +1,13 @@
+@media screen and (min-width: 375px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        margin: 15vh 30vh 5vh;
+
+        .card {
+            &__body {
+                margin-block: 1.5rem 5rem;
+            }
+        }
+    }
+}
