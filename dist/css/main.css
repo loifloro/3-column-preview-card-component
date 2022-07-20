@@ -132,7 +132,7 @@ p {
   .container {
     display: flex;
     flex-direction: row;
-    margin: 15vh 30vh 5vh; }
+    margin: 20vh 30vh 5vh; }
     .container .card__body {
       margin-block: 1.5rem 5rem; } }
 
