@@ -31,8 +31,9 @@ p {
     flex-direction: column;
     overflow: hidden;
     border-radius: .5rem;
-    margin: 4rem 1.5rem;
-
+    // margin: 4rem 1.5rem;
+    max-width: 340px;
+    
     .card {
         padding: 3rem;
 
