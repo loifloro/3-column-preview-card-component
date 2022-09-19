@@ -142,6 +142,7 @@ p {
   color: hsl(179deg, 100%, 13%);
 }
 .cards .card__btn:hover, .cards .card__btn:focus {
+  cursor: pointer;
   background: inherit;
   border: 1px solid hsl(0deg, 0%, 95%);
   color: hsl(0deg, 0%, 95%);
