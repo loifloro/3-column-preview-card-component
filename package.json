@@ -9,7 +9,15 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "sass": "^1.53.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loifloro/3-column-preview-card-component.git"
+  },
+  "bugs": {
+    "url": "https://github.com/loifloro/3-column-preview-card-component/issues"
+  },
+  "homepage": "https://github.com/loifloro/3-column-preview-card-component#readme",
+  "devDependencies": {
+    "sass": "^1.54.9"
   }
 }

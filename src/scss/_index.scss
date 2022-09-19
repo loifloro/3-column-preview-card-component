@@ -1,4 +1,4 @@
-@import "./variable";
+@use "./variable" as *;
 
 html {
     background: $very-light-gray;
@@ -6,6 +6,9 @@ html {
 
 body{
     font-size: 15px;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
 }
 
 h1 {
@@ -23,12 +26,13 @@ p {
     color: $white;
 }
 
-.container {
+.cards {
     display: flex;
     flex-direction: column;
     overflow: hidden;
     border-radius: .5rem;
-    margin: 4rem 1.5rem;
+    // margin: 4rem 1.5rem;
+    max-width: 340px;
 
     .card {
         padding: 3rem;
@@ -67,6 +71,7 @@ p {
                 color: $very-dark-cyan;
             }
             &:hover , &:focus {
+                cursor: pointer;
                 background: inherit;
                 border: 1px solid $very-light-gray;
                 color: $very-light-gray;
