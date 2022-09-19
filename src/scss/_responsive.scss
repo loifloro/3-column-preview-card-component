@@ -1,8 +1,10 @@
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 768px) {
     .cards {
         display: flex;
         flex-direction: row;
-        margin: 20vh 30vh 5vh;
+        // margin: 20vh 30vh 5vh;
+        max-width: 910px;
+
 
         .card {
             &__body {
