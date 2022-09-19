@@ -79,6 +79,9 @@ html {
 
 body {
   font-size: 15px;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
 }
 
 h1 {
@@ -96,32 +99,32 @@ p {
   color: hsla(0deg, 0%, 100%, 0.75);
 }
 
-.container {
+.cards {
   display: flex;
   flex-direction: column;
   overflow: hidden;
   border-radius: 0.5rem;
-  margin: 4rem 1.5rem;
+  max-width: 340px;
 }
-.container .card {
+.cards .card {
   padding: 3rem;
 }
-.container .card--sedan {
+.cards .card--sedan {
   background: hsl(31deg, 77%, 52%);
 }
-.container .card--suv {
+.cards .card--suv {
   background: hsl(184deg, 100%, 22%);
 }
-.container .card--luxury {
+.cards .card--luxury {
   background: hsl(179deg, 100%, 13%);
 }
-.container .card__title {
+.cards .card__title {
   margin-block: 1rem;
 }
-.container .card__body {
+.cards .card__body {
   margin-block: 1.5rem;
 }
-.container .card__btn {
+.cards .card__btn {
   padding: 0.5rem 1.5rem;
   border-radius: 2rem;
   border: none;
@@ -129,16 +132,16 @@ p {
   font-weight: 400;
   background: hsl(0deg, 0%, 95%);
 }
-.container .card__btn--sedan {
+.cards .card__btn--sedan {
   color: hsl(31deg, 77%, 52%);
 }
-.container .card__btn--suv {
+.cards .card__btn--suv {
   color: hsl(184deg, 100%, 22%);
 }
-.container .card__btn--luxury {
+.cards .card__btn--luxury {
   color: hsl(179deg, 100%, 13%);
 }
-.container .card__btn:hover, .container .card__btn:focus {
+.cards .card__btn:hover, .cards .card__btn:focus {
   background: inherit;
   border: 1px solid hsl(0deg, 0%, 95%);
   color: hsl(0deg, 0%, 95%);
@@ -154,13 +157,13 @@ p {
   color: hsl(228deg, 45%, 44%);
 }
 
-@media screen and (min-width: 375px) {
-  .container {
+@media screen and (min-width: 768px) {
+  .cards {
     display: flex;
     flex-direction: row;
-    margin: 20vh 30vh 5vh;
+    max-width: 910px;
   }
-  .container .card__body {
+  .cards .card__body {
     margin-block: 1.5rem 5rem;
   }
 }
